@@ -8,10 +8,6 @@ export default class HelloElement extends LitElement {
         font-family: sans-serif;
         color: orange;
       }
-      h3 {
-        font-family: serif;
-        color: red;
-      }
     `;
   }
 
@@ -20,7 +16,7 @@ export default class HelloElement extends LitElement {
 
   render() {
     return html`
-      <h1>Hello ${this.name}</h1>
+      <h1>You are Awesome ${this.name}</h1>
     `;
   }
 }

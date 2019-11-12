@@ -1,6 +1,5 @@
 import { html, LitElement, customElement } from "lit-element";
 const { Modal } = require("carbon-components");
-// import { Modal } from "carbon-components";
 
 @customElement("carbon-modal")
 export default class HelloElement extends LitElement {

@@ -1,5 +1,6 @@
 const { resolve } = require("path");
 const { CheckerPlugin } = require("awesome-typescript-loader");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   resolve: {
@@ -27,5 +28,11 @@ module.exports = {
       }
     ]
   },
-  plugins: [new CheckerPlugin()]
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+      favicon: "./public/favicon.ico"
+    }),
+    new CheckerPlugin()
+  ]
 };
