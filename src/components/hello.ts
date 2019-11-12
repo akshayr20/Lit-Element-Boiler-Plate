@@ -6,7 +6,7 @@ export default class HelloElement extends LitElement {
     return css`
       h1 {
         font-family: sans-serif;
-        color: green;
+        color: orange;
       }
       h3 {
         font-family: serif;
